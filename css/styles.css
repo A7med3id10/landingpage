@@ -1,0 +1,93 @@
+/*
+ *
+ * CSS written based on SMACSS architecture.
+ * To learn more, visit: http://smacss.com/
+ * 
+ * For simplicity, no reset or normalize is added. 
+ * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
+ *
+*/
+
+/* ---- Base Rules ---- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #eef3f6;
+  margin: 0;
+  font-family: "Merriweather", serif;
+  color: #fff;
+}
+
+/* Typeography General*/
+h1 {
+  font-family: "Fira Sans", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  border-bottom: 1px solid #cc1;
+}
+
+h2 {
+  border-bottom: 1px solid #cc1;
+  font-family: "Oxygen", Sans-Serif;
+  font-size: 3em;
+  color: #fff;
+}
+
+p {
+  line-height: 1.6em;
+  color: #eee;
+}
+
+section {
+  position: relative;
+  min-height: 60vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: rgb(87, 190, 141);
+  padding: 30px;
+  border: solid #929292;
+  -webkit-box-shadow: -4px 4px 7px 1px rgba(153, 153, 153, 0.96);
+  -moz-box-shadow: -4px 4px 7px 1px rgba(153, 153, 153, 0.96);
+  box-shadow: -4px 4px 7px 1px rgba(153, 153, 153, 0.96);
+}
+
+.containersec {
+  padding-top: 30px;
+}
+img {
+  width: 80%;
+  border: 4px solid #ffc107;
+}
+
+img:hover {
+  border: 4px solid #ffffff;
+}
+
+.sectiontext {
+  padding-bottom: 30px;
+}
+
+nav {
+  margin: auto;
+}
+nav a {
+  font-weight: bold;
+  color: #fff !important;
+}
+nav a:hover {
+  font-weight: bold;
+  background-color: #343435;
+  color: #fff !important;
+}
+
+.noactiveclass {
+  background-color: rgb(70, 71, 71);
+}
+
+.activesection {
+  background-color: rgb(19, 100, 250);
+}
