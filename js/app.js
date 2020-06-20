@@ -1,3 +1,15 @@
+/* -------------------------- building nav bar   ------------------------*/
+var navbar_list = document.getElementById("navbar-navv");
+const itemssections = document.querySelectorAll("section");
+
+buildNavBar = () => {
+  navbar_list.innerHTML = "";
+  itemssections.forEach((section) => {
+    navbar_list.innerHTML += `<a class="nav-item nav-link" id=bu${section.id}>${section.id}</a>`;
+  });
+};
+buildNavBar();
+
 /* -------------------------- handle scrolling  ------------------------*/
 
 const sections = [].slice.call(document.querySelectorAll("section"));
@@ -37,32 +49,32 @@ const setup = (sections) => {
 setup(sections);
 
 /* -------------------------- handle navigation menu------------------------*/
-let butttolink1 = document.querySelector("#butttolink1");
-let butttolink2 = document.querySelector("#butttolink2");
-let butttolink3 = document.querySelector("#butttolink3");
-let butttolink4 = document.querySelector("#butttolink4");
+let busection1 = document.querySelector("#busection1");
+let busection2 = document.querySelector("#busection2");
+let busection3 = document.querySelector("#busection3");
+let busection4 = document.querySelector("#busection4");
 
-let buttarr = [butttolink1, butttolink2, butttolink3, butttolink4];
+let buttarr = [busection1, busection2, busection3, busection4];
 
 buttarr.forEach((item) => {
   item.addEventListener("click", (e) => {
     switch (e.target.id) {
-      case "butttolink1":
+      case "busection1":
         document
           .querySelector("#section1")
           .scrollIntoView({ block: "start", behavior: "smooth" });
         break;
-      case "butttolink2":
+      case "busection2":
         document
           .querySelector("#section2")
           .scrollIntoView({ block: "start", behavior: "smooth" });
         break;
-      case "butttolink3":
+      case "busection3":
         document
           .querySelector("#section3")
           .scrollIntoView({ block: "start", behavior: "smooth" });
         break;
-      case "butttolink4":
+      case "busection4":
         document
           .querySelector("#section4")
           .scrollIntoView({ block: "start", behavior: "smooth" });

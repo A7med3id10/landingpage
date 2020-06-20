@@ -25,24 +25,27 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <nav
-      id="navbar"
-      class="navbar navbar-expand-lg navbar-light bg-warning sticky-top border-bottom border-dark"
-    >
+    
+  <!-- -------------------nav----------------------- -->
+ <nav id="navbar"  class="navbar navbar-expand-lg navbar-light bg-warning sticky-top border-bottom border-dark">
       <a class="navbar-brand" href="#">Home</a>
-   
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" id="butttolink1"  >section 1</a>
-          <a class="nav-item nav-link" id="butttolink2">section 2</a>
-          <a class="nav-item nav-link" id="butttolink3">section 3</a>
-          <a class="nav-item nav-link" id="butttolink4" >section 4</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <div class="navbar-nav" id="navbar-navv">
+          <ul id="navbar_list"> </ul>
         </div>
       </div>
     </nav>
+
+  
+
+
     <div class="container-fluid">
       <!-- -------------------section 1----------------------- -->
-      <section id="section1">
+      <section id="section1"  data-section="section1">
         <h1>#section 1</h1>
         <h2>
           BOOK1 : Becoming
@@ -74,7 +77,7 @@
       </section>
 
       <!-- -------------------section 2----------------------- -->
-      <section id="section2">
+      <section id="section2" data-section="section2">
         <h1>#section 2</h1>
         <h2>
           BOOK2 : All the Light We Cannot See: The Breathtaking World Wide
@@ -110,7 +113,7 @@
         </div>
       </section>
       <!-- -------------------section 3----------------------- -->
-      <section id="section3">
+      <section id="section3" data-section="section3">
         <h1>#section 3</h!>
         <h2>
           BOOK3 : The Silent Patient: The Richard and Judy bookclub pick and
@@ -142,7 +145,7 @@
 
       <!-- -------------------section 4----------------------- -->
 
-      <section id="section4">
+      <section id="section4" data-section="section4">
         <h1>#section 4</h1>
         <h2>
           BOOK4 : The Whistler: The Number One Bestseller
@@ -189,6 +192,9 @@
 
  <!-- java script file  -->
 <script src="./js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
   </body>
 </html>
